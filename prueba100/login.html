@@ -1,18 +1,131 @@
 <!DOCTYPE html>
-<html>
+
+<html class="no-js" lang="en">
+
+
 <head>
-	<title>Ingreso</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-sacale=1, minimun-sacale=1">
-	<link rel="stylesheet"  href="css/login.css">
+
+    <meta charset="utf-8">
+    <title>Acuafitness</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
-<body>
-	<form action="public/login.php" method="POST">
-		<h2>INGRESE SUS DATOS</h2>
-		<input type="text"  placeholder="INGRESE SU CEDULA" name="cedula">
-		<input type="password"  placeholder="INGRESE SU CONTRASEÑA" name="contrasena">
-	<input type="submit" value="INGRESAR">
-	</form>
+
+<body id="top">
+
+
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+<section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">FORMULARIO DE INGRESO</h3>
+                <h1 class="display-2 display-2--light">Bienvenido</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+                <h3 class="h6">Ingrese sus datos</h3>
+
+                <form action="public/login.php" name="contactForm" id="contactForm" method="POST action="" novalidate="novalidate">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="cedula" type="text" id="contactName" placeholder="ingrese su numero de cedula" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contrasena" type="password" id="contactEmail" placeholder="ingrese su contraseña" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    
+                    <div  class="form-field">
+                        <input class="full-width btn--primary" type="submit" value="INGRESAR">
+                     
+                        <div class="submit-loader">
+                            <div class="text-loader">Cargando...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                
+               
+
+    
+
+        <div class="about__line"></div>
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Acuafitness 2019</span> 
+                    <span>Emprendimiento <a href="https://www.colorlib.com/">Colombiano</a></span>	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> 
+
+    </footer> 
+
+
+    
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>
